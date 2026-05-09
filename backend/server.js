@@ -7,7 +7,12 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://ethara-ai-gamma.vercel.app/"
+  origin: [
+    "https://ethara-ai-gamma.vercel.app",
+    "https://ethara-ngv5hg61n-nishita-mattas-projects.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
 }));
 app.use(express.json());
 
