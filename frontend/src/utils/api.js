@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://ethara-ai-29d4.onrender.com',
+  baseURL: 'https://ethara-ai-29d4.onrender.com/api',
   headers: { 'Content-Type': 'application/json' }
 });
 
